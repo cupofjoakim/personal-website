@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Developer",
+        "company": {"name":"SBAB", "link":"https://www.sbab.se/"},
+        "duration": "April 2018 – Present",
+        "details": [
+            "Planned and built a new internet bank with React and Apollo GraphQL",
+            "Created and maintained multiple micro-services in java (spring-boot) and node (express/nestjs)",
+            "Worked with evaluating micro-frontends as an architectural alternative for the different platforms",
+            "Co-created and contributed heavily to SBAB-UI, an internal component library, to align frontend styling and save developer time"
+        ]
+    },
+    {
+        "title": "Developer",
+        "company": {"name": "Mobility46", "link":"https://www.mobility46.se/"},
+        "duration": "April 2016 – March 2018",
+        "details": [
+            "Built and maintained a white labeled app in React Native that allowed customers to open their garage door without leaving their car",
+            "Co-developed and designed a parking management software in Ruby on Rails (Park46) complete with integrations to popular payment providers",
+            "Developed Laddkoll, an app that lets you find and pay for parking with EV chargers"
+        ]
+    },
+    {
+        "title": "Freelance Developer",
+        "company": {"name":"cupofjoakim"},
+        "duration": "August 2015 – April 2016",
+        "details": [
+            "Collaborated with newly founded agency Sebton/Co on a project for SHHBostad with SOAP integrations to Vitec for listings",
+            "Web development and consultancy for various smaller clients"
+        ]
+    },
+    {
+        "title": "Frontend Developer",
+        "company": {"name":"The World Loves", "link":"https://www.accenture.com/se-en/company-news-release-team-from-swedish-creative-agency"},
+        "duration": "April 2014 – August 2015",
+        "details": [
+            "A lot of work for Swish, one of Swedens largest payment providers, ranging from their then official website to animation prototyping in Framer and concept development for commercials",
+            "Conceptual work for Elkjøp, the largest consumer electronics retailer in the cordic region, around in-store tracking and AI-driven store layouts",
+            "Some very secrative work for a major asian electronics company, mainly focused on interface prototyping for luxury devices."
+        ]
+    },
+    {
+        "title": "Frontend Developer",
+        "company": {"name":"River", "link":"https://www.river.se/"},
+        "duration": "March 2013 – March 2014",
+        "details": [
+            "Developed parts of the PS4 companion app for Wolfenstein: The New Order for Machinegames",
+            "Development iAds for Nike",
+            "Developed a car rental site for Mabi"
+        ]
+    },
+    {
+        "title": "Developer Intern",
+        "company": {"name":"Stink Studios", "link":"https://www.stinkstudios.com/"},
+        "duration": "November 2012 – October 2013",
+        "details": [
+            "Played around with css animations for WWF which resulted in Wonder World Fur that got us a Site of the day at the FWA's",
+            "Created prototypes for pitch material for Mentos and Coca Cola"
+        ]
+    }
+]

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+  
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  %svelte.head%
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+      background: #AD1400;
+    }
+
+    body {
+      background: #f8efdc;
+      overscroll-behavior-x: none;
+    }
+
+    a:hover {
+      color: #AD1400;
+    }
+
+    #svelte {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "DM Serif Display", serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="svelte">%svelte.body%</div>
+</body>
+
+</html>
