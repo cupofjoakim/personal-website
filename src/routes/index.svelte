@@ -46,10 +46,10 @@
   </article>
 </main>
 
-<footer>
-  <a href="https://github.com/cupofjoakim" target="_blank">github</a>
-  <a href="https://www.linkedin.com/in/joakimwimmerstedt" target="_blank">linkedin</a>
-  <a href="https://twitter.com/cupofjoakim" target="_blank">twitter</a>
+<footer class="flex-1 flex flex-row justify-center pb-8 -mt-12">
+  <a href="https://github.com/cupofjoakim" target="_blank"><img src="/icon-github.svg" alt="Github"></a>
+  <a href="https://www.linkedin.com/in/joakimwimmerstedt" target="_blank" class="mx-4"><img src="/icon-linkedin.svg" alt="Linkedin"/></a>
+  <a href="https://twitter.com/cupofjoakim" target="_blank"><img src="/icon-twitter.svg" alt="Twitter"></a>
 </footer>
 
 <style>
@@ -84,6 +84,10 @@
     article {
       max-width: 1024px;
     }
+  }
+
+  footer a:hover, footer a:focus {
+    opacity: .4;
   }
 
   .red-underline {

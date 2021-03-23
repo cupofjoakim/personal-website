@@ -50,6 +50,14 @@
     />
   </div>
 </section>
+<div>
+  <a
+    class="inline-block border-2 border-current p-2 px-4 w-auto"
+    href="#experience"
+  >
+    Where I've worked →
+  </a>
+</div>
 
 <style>
   .profile-pic {

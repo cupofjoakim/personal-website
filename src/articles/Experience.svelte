@@ -9,8 +9,8 @@
   }
 </script>
 
-<h2 class="font-bold mb-2 text-xl">Where I've Worked</h2>
-<section class="mb-10 text-sm flex flex-col md:flex-row w-full">
+<h2 class="font-bold mb-2 text-2xl">Where I've Worked</h2>
+<section class="mb-14 text-sm md:text-base flex flex-col md:flex-row w-full">
   <div>
     <ul class="w-full md:w-40 mr-16 mb-8 md:mb-0">
       {#each positions as pos, i}
@@ -24,13 +24,13 @@
     </ul>
   </div>
 
-  <div class="flex-1 flex relative">
+  <div class="flex-1 flex relative min-h-10">
     {#each [positions[index]] as selectedPosition (index)}
       <div class="flex-1 absolute inset-0"
         in:fly="{{ y: 100, duration: 500, delay:300 }}"
         out:fly="{{ y: -100, duration: 500 }}"
       >
-        <div class="text-xl mb-2">
+        <div class="text-base mb-2">
           {selectedPosition.title} @
           {#if selectedPosition.company.link}
             <a href={selectedPosition.company.link} target="_blank">
@@ -51,9 +51,11 @@
     {/each}
   </div>
 </section>
-
-<style>
-  .selection-list {
-    width: 160px;
-  }
-</style>
+<div>
+  <a
+    class="hidden md:inline-block border-2 border-current p-2 px-4 w-auto"
+    href="#contact"
+  >
+    Get in touch →
+  </a>
+</div>

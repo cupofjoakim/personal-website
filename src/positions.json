@@ -6,7 +6,6 @@
         "details": [
             "Planned and built a new internet bank with React and Apollo GraphQL",
             "Created and maintained multiple micro-services in java (spring-boot) and node (express/nestjs)",
-            "Worked with evaluating micro-frontends as an architectural alternative for the different platforms",
             "Co-created and contributed heavily to SBAB-UI, an internal component library, to align frontend styling and save developer time"
         ]
     },
@@ -34,9 +33,9 @@
         "company": {"name":"The World Loves", "link":"https://www.accenture.com/se-en/company-news-release-team-from-swedish-creative-agency"},
         "duration": "April 2014 – August 2015",
         "details": [
-            "A lot of work for Swish, one of Swedens largest payment providers, ranging from their then official website to animation prototyping in Framer and concept development for commercials",
-            "Conceptual work for Elkjøp, the largest consumer electronics retailer in the cordic region, around in-store tracking and AI-driven store layouts",
-            "Some very secrative work for a major asian electronics company, mainly focused on interface prototyping for luxury devices."
+            "Various work for Swish, one of Swedens largest payment providers, ranging from their then official website to animation prototyping in Framer and concept development for commercials",
+            "Conceptual work for Elkjøp around in-store tracking and AI-driven store layouts",
+            "Interface prototyping for a major asian electronics company, focused on luxury devices."
         ]
     },
     {
