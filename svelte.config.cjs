@@ -9,13 +9,6 @@ module.exports = {
 		adapter: vercel(),
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
-		vite: {
-			resolve: {
-				alias: {
-					$components: path.resolve('src/components'),
-					$articles: path.resolve('src/articles')
-				}
-			}
-		}
+		vite: {}
 	}
 };

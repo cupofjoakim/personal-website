@@ -1,5 +1,5 @@
 <script>
-  import HoverableWord from "$components/HoverableWord.svelte";
+  import HoverableWord from "../components/HoverableWord.svelte";
 </script>
 
 <h2 class="text-2xl	font-semibold mb-6">About me</h2>

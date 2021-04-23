@@ -1,9 +1,9 @@
 <script>
-  import AboutMe from "$articles/AboutMe.svelte";
-  import Experience from "$articles/Experience.svelte";
+  import AboutMe from "../articles/AboutMe.svelte";
+  import Experience from "../articles/Experience.svelte";
 
-  import TopBar from "$components/TopBar.svelte";
-  import Blob from "$components/Blob/Blob.svelte";
+  import TopBar from "../components/TopBar.svelte";
+  import Blob from "../components/Blob/Blob.svelte";
 </script>
 
 <TopBar />
