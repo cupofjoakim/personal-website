@@ -4,9 +4,7 @@
         "company": {"name":"SBAB", "link":"https://www.sbab.se/"},
         "duration": "April 2018 – Present",
         "details": [
-            "Planned and built a new internet bank with React and Apollo GraphQL",
-            "Created and maintained multiple micro-services in java (spring-boot) and node (express/nestjs)",
-            "Co-created and contributed heavily to SBAB-UI, an internal component library, to align frontend styling and save developer time"
+            "I rewrote an internet bank, co-created/maintained a react component library and developed various micro services in java."
         ]
     },
     {
@@ -14,9 +12,7 @@
         "company": {"name": "Mobility46", "link":"https://www.mobility46.se/"},
         "duration": "April 2016 – March 2018",
         "details": [
-            "Built and maintained a white labeled app in React Native that allowed customers to open their garage door without leaving their car",
-            "Co-developed and designed a parking management software in Ruby on Rails (Park46) complete with integrations to popular payment providers",
-            "Developed Laddkoll, an app that lets you find and pay for parking with EV chargers"
+            "I designed and developed numerous products such as Park46, a garage managing app, as well as Laddkoll and an administrative tool for garage owners."
         ]
     },
     {
@@ -24,18 +20,15 @@
         "company": {"name":"cupofjoakim"},
         "duration": "August 2015 – April 2016",
         "details": [
-            "Collaborated with newly founded agency Sebton/Co on a project for SHHBostad with SOAP integrations to Vitec for listings",
-            "Web development and consultancy for various smaller clients"
+            "Collaborated with Sebton/Co to develop a web presence for SHHBostad. I also took on web development work for various smaller clients."
         ]
     },
     {
         "title": "Frontend Developer",
-        "company": {"name":"The World Loves", "link":"https://www.accenture.com/se-en/company-news-release-team-from-swedish-creative-agency"},
+        "company": {"name":"The World Loves"},
         "duration": "April 2014 – August 2015",
         "details": [
-            "Various work for Swish, one of Swedens largest payment providers, ranging from their then official website to animation prototyping in Framer and concept development for commercials",
-            "Conceptual work for Elkjøp around in-store tracking and AI-driven store layouts",
-            "Interface prototyping for a major asian electronics company, focused on luxury devices."
+            "Development work for Swish, one of Swedens largest payment providers, as well as interface prototyping for a major asian electronics company and conceptual work for Elkjøp."
         ]
     },
     {
@@ -43,18 +36,15 @@
         "company": {"name":"River", "link":"https://www.river.se/"},
         "duration": "March 2013 – March 2014",
         "details": [
-            "Developed parts of the PS4 companion app for Wolfenstein: The New Order for Machinegames",
-            "Development iAds for Nike",
-            "Developed a car rental site for Mabi"
+            "Various ad-related work for clients such as Nike, Mabi and Machinegames. Developed the PS4 companion app for Wolfenstein: The New Order."
         ]
     },
     {
         "title": "Developer Intern",
         "company": {"name":"Stink Studios", "link":"https://www.stinkstudios.com/"},
-        "duration": "November 2012 – October 2013",
+        "duration": "November 2012 – February 2013",
         "details": [
-            "Played around with css animations for WWF which resulted in Wonder World Fur that got us a Site of the day at the FWA's",
-            "Created prototypes for pitch material for Mentos and Coca Cola"
+            "Development work on ad sites for clients such as WWF, Coca Cola and Mentos. Won a FWA for the WWF work."
         ]
     }
 ]

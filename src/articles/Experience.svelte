@@ -1,61 +1,45 @@
 <script>
   import { fly } from "svelte/transition";
   import positions from "../positions.json";
-
-  let index = 0;
-
-  const handlePositionSelect = (i) => {
-    index = i;
-  }
 </script>
 
-<h2 class="font-bold mb-2 text-2xl">Where I've Worked</h2>
-<section class="mb-14 text-sm md:text-base flex flex-col md:flex-row w-full">
-  <div>
-    <ul class="w-full md:w-40 mr-16 mb-8 md:mb-0">
-      {#each positions as pos, i}
-        <li
-          class="border-b-2 border-gray-800 cursor-pointer p-2 text-gray-500 hover:text-current"
-          on:click={() => handlePositionSelect(i)}
-        >
+<section class="mb-14 w-full">
+  <h2 class="text-2xl xl:text-5xl font-bold mb-4 xl:mb-8">Where I've Worked</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    {#each positions as pos}
+      <div class="position-cell p-8 transform-gpu cursor-text">
+        <h3 class="text-2xl text-center">
           {pos.company.name}
-        </li>
-      {/each}
-    </ul>
-  </div>
-
-  <div class="flex-1 flex relative min-h-10">
-    {#each [positions[index]] as selectedPosition (index)}
-      <div class="flex-1 absolute inset-0"
-        in:fly="{{ y: 100, duration: 500, delay:300 }}"
-        out:fly="{{ y: -100, duration: 500 }}"
-      >
-        <div class="text-base mb-2">
-          {selectedPosition.title} @
-          {#if selectedPosition.company.link}
-            <a href={selectedPosition.company.link} target="_blank">
-              {selectedPosition.company.name}
-            </a>
-          {:else}
-            {selectedPosition.company.name}
-          {/if}
-        </div>
-        <div class="mb-4">{selectedPosition.duration}</div>
-
-        <ul class="list-disc ml-4">
-          {#each selectedPosition.details || [] as detail}
-            <li class="mb-2 max-w-md	">{detail}</li>
-          {/each}
-        </ul>
+        </h3>
+        <p class="text-center mb-4">{pos.duration}</p>
+        {#each pos.details as paragraph}
+          <p>{paragraph}</p>
+        {/each}
       </div>
     {/each}
   </div>
 </section>
-<div>
+<div class="text-center md:text-left">
   <a
-    class="hidden md:inline-block border-2 border-current p-2 px-4 w-auto"
+    class="sm:block text-lg md:inline-block border-2 border-current p-2 px-4 w-auto xl:text-2xl"
     href="#contact"
   >
     Get in touch →
   </a>
 </div>
+
+<style>
+  .position-cell {
+    color: #AD1400;
+    background-color: #f8efdc;
+    transition: all .3s ease;
+    border: 3px solid #AD1400;
+  }
+
+  .position-cell:hover {
+    transform: scale(1.05);
+    background-color: #AD1400;
+    color: #f8efdc;
+    border-color: transparent;
+  }
+</style>

@@ -9,7 +9,7 @@
 <TopBar />
 <main class="flex-1 flex flex-col items-center mt-10 sm:mt-4 text-gray-800">
   <Blob color="#AD1400" />
-  <article class="px-6 py-4 text-xl flex flex-col justify-center" id="intro">
+  <article class="px-6 py-4 text-xl flex flex-col justify-center max-w-1024" id="intro">
     <h1 class="text-7xl	font-semibold z-10">
       Hej, I'm Joakim.
     </h1>
@@ -33,11 +33,11 @@
     <AboutMe />
   </article>
 
-  <article class="px-6 py-4 text-base flex flex-col justify-center w-full" id="experience">
+  <article class="px-6 py-4 text-base flex flex-col justify-center w-full overflow-hidden" id="experience">
     <Experience />
   </article>
 
-  <article class="px-6 py-4 text-base flex flex-col justify-center text-center text-xl md:text-2xl" id="contact">
+  <article class="px-6 py-4 text-base flex flex-col justify-center text-center text-xl md:text-2xl max-w-1024" id="contact">
     <section>
       <h2 class="text-7xl	font-semibold mb-8 red-underline">Say Hi!</h2>
       <p class="mb-8">While I'm not currently looking for new opportunities, I'm always eager to talk or answer questions. Send me a mail and I'll try my best to get back to you soon-ish!</p>
@@ -77,13 +77,11 @@
 
   article {
     min-height: 100vh;
-    max-width: 100%;
+    width: 100%;
   }
 
-  @media only screen and (min-width: 1024px) {
-    article {
-      max-width: 1024px;
-    }
+  .max-w-1024 {
+    max-width: 1024px;
   }
 
   footer a:hover, footer a:focus {
