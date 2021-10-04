@@ -1,5 +1,4 @@
 <script>
-  import { fly } from "svelte/transition";
   import positions from "../positions.json";
 </script>
 

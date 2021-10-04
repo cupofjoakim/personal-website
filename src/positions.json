@@ -1,8 +1,16 @@
 [
     {
+        "title": "Software Engineer",
+        "company": {"name":"Spotify", "link":"https://www.spotify.com/"},
+        "duration": "October 2021 – Present",
+        "details": [
+            "Development work on the Soundtrap product, which is a web based DAW and podcast creation app."
+        ]
+    },
+    {
         "title": "Developer",
         "company": {"name":"SBAB", "link":"https://www.sbab.se/"},
-        "duration": "April 2018 – Present",
+        "duration": "April 2018 – September 2021",
         "details": [
             "I rewrote an internet bank, co-created/maintained a react component library and developed various micro services in java."
         ]
@@ -37,14 +45,6 @@
         "duration": "March 2013 – March 2014",
         "details": [
             "Various ad-related work for clients such as Nike, Mabi and Machinegames. Developed the PS4 companion app for Wolfenstein: The New Order."
-        ]
-    },
-    {
-        "title": "Developer Intern",
-        "company": {"name":"Stink Studios", "link":"https://www.stinkstudios.com/"},
-        "duration": "November 2012 – February 2013",
-        "details": [
-            "Development work on ad sites for clients such as WWF, Coca Cola and Mentos. Won a FWA for the WWF work."
         ]
     }
 ]
