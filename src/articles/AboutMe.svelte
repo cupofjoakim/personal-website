@@ -17,14 +17,11 @@
       </p>
 
       <p class="mb-6 xl:text-2xl">
-        In 2018 I joined SBAB where I've worked on a multitude of projects, like
-        building a new internet bank with React and GraphQL or levaraging Kafka
-        to tell everyone about the wonders of GDPR (<a
-          href="https://twitter.com/rianjohnson/status/999730569641525248?s=20"
-          target="_blank">you remember, right?</a
-        >). I'm also a Hyper Island graduate with a history in advertising,
-        where I've worked with large clients such as Nike, Samsung, WWF and
-        Swish.
+        At present I'm part of Spotify, working with the Soundtrap product with
+        the subscription domain. Before that I worked at the swedish bank SBAB
+        where I rebuilt their online bank. I'm also a Hyper Island graduate with
+        a history in advertising, where I've worked with large clients such as
+        Nike, Samsung, WWF and Swish.
       </p>
 
       <p class="mb-10 xl:text-2xl">
