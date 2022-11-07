@@ -47,9 +47,10 @@
 </main>
 
 <footer class="flex-1 flex flex-row justify-center pb-8 -mt-12">
-  <a rel="external" href="https://github.com/cupofjoakim" target="_blank"><img src="/icon-github.svg" alt="Github"></a>
-  <a rel="external" href="https://www.linkedin.com/in/joakimwimmerstedt" target="_blank" class="mx-4"><img src="/icon-linkedin.svg" alt="Linkedin"/></a>
-  <a rel="external" href="https://twitter.com/cupofjoakim" target="_blank"><img src="/icon-twitter.svg" alt="Twitter"></a>
+  <a rel="external" href="https://github.com/cupofjoakim" target="_blank" class="mr-4"><img src="/icon-github.svg" alt="Github"></a>
+  <a rel="external" href="https://www.linkedin.com/in/joakimwimmerstedt" target="_blank" class="mr-4"><img src="/icon-linkedin.svg" alt="Linkedin"/></a>
+  <a rel="external" href="https://twitter.com/cupofjoakim" target="_blank" class="mr-4"><img src="/icon-twitter.svg" alt="Twitter"></a>
+  <a rel="me" href="https://mas.to/@cupofjoakim" target="_blank"><img src="/icon-mastodon.svg" alt="Mastodon"></a>
 </footer>
 
 <style>
