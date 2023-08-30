@@ -1,5 +1,19 @@
+import type Blob from "./Blob";
+
+type SimpleCoords = Record<"x" | "y", number>;
+
 export default class Point {
-  constructor(azimuth, parent) {
+
+  parent: Blob;
+  azimuth: number;
+  _components: SimpleCoords;
+  _acceleration= 0;
+  _speed = 0;
+  _radialEffect = 0;
+  _elasticity = 0.001;
+  _friction = 0.0085;
+
+  constructor(azimuth: number, parent: Blob) {
     this.parent = parent;
     this.azimuth = Math.PI - azimuth;
     this._components = { 
@@ -10,7 +24,7 @@ export default class Point {
     this.acceleration = -0.3 + Math.random() * 0.6;
   }
   
-  solveWith(leftPoint, rightPoint) {
+  solveWith(leftPoint: Point, rightPoint: Point) {
     this.acceleration = (-0.3 * this.radialEffect + ( leftPoint.radialEffect - this.radialEffect ) + ( rightPoint.radialEffect - this.radialEffect )) * this.elasticity - this.speed * this.friction;
   }
   

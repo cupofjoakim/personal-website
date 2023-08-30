@@ -1,8 +1,28 @@
 import Point from './Point';
 
+type SimpleCoords = Record<"x" | "y", number>;
+
 export default class Blob {
-  constructor() {
-    this.points = [];
+
+  points: Point[] = [];
+  _points = 10;
+  _color = "#000000";
+  _canvas: HTMLCanvasElement;
+  ctx: CanvasRenderingContext2D;
+  _running = true;
+  _position: SimpleCoords =  { x: 0.5, y: 0.5 };
+  _radius = 150;
+
+  constructor(canvas: HTMLCanvasElement, color: string) {
+    this._canvas = canvas;
+    this._color = color;
+  
+    let ctx = canvas.getContext('2d');
+
+    if (ctx === null) {
+      throw new Error("Failed to init canvas");
+    }
+    this.ctx = ctx;
   }
   
   init() {
@@ -58,7 +78,7 @@ export default class Blob {
     requestAnimationFrame(this.render.bind(this));
   }
   
-  push(item) {
+  push(item: Point) {
     if(item instanceof Point) {
       this.points.push(item);
     }
@@ -70,13 +90,7 @@ export default class Blob {
   get color() {
     return this._color || '#000000';
   }
-  
-  set canvas(value) {
-    if(value instanceof HTMLElement && value.tagName.toLowerCase() === 'canvas') {
-      this._canvas = value;
-      this.ctx = this._canvas.getContext('2d');
-    }
-  }
+
   get canvas() {
     return this._canvas;
   }
@@ -99,7 +113,7 @@ export default class Blob {
     return this._radius || 150;
   }
   
-  set position(value) {
+  set position(value: SimpleCoords) {
     if(typeof value == 'object' && value.x && value.y) {
       this._position = value;
     }
@@ -113,13 +127,15 @@ export default class Blob {
   }
   
   get center() {
+    //console.log(this.canvas.width);
+    //console.log(this.position.x);
     return { x: this.canvas.width * this.position.x, y: this.canvas.height * this.position.y };
   }
   
   set running(value) {
     this._running = value === true;
   }
-  get running() {
+  get running(): boolean {
     return this.running !== false;
   }
 }
