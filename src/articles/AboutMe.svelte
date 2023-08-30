@@ -2,33 +2,29 @@
   import HoverableWord from "../components/HoverableWord.svelte";
 </script>
 
-<section class="flex flex-col-reverse items-center md:flex-row sm:items-start sm:items-center justify-around">
-  <div>
-    <h2 class="text-2xl xl:text-5xl	font-semibold mb-6">About me</h2>
-    <div>
-      <p class="mb-6 xl:text-2xl">
-        Hej! I'm Joakim, a fullstack developer based in Stockholm, Sweden.
+<section class="w-full flex flex-col sm:flex-row">
+  <div class="w-full sm:w-2/5">
+    <h2 class="text-4xl xl:text-5xl font-bold mb-4 xl:mb-8">About <HoverableWord
+      image="/me_bw.jpg"
+      >me</HoverableWord
+    ></h2>
+  </div>
+  <div class="w-full sm:w-3/5 flex flex-col gap-4 sm:pl-8">
+      <p class="mb-2">
+        Hej! I'm Joakim, a senior software engineer based in Stockholm, Sweden.
       </p>
 
-      <p class="mb-6 xl:text-2xl">
+      <p class="mb-2">
         I enjoy solving problems. Be it through designing a new system,
         automating a manual task or implementing some cool interface changes,
-        I'm always happy to do it.
+        I'm always up to the task.
       </p>
 
-      <p class="mb-6 xl:text-2xl">
-        At present I'm part of Spotify, working with the Soundtrap product with
-        the subscription domain. Before that I worked at the swedish bank SBAB
-        where I rebuilt their online bank. I'm also a Hyper Island graduate with
-        a history in advertising, where I've worked with large clients such as
-        Nike, Samsung, WWF and Swish.
-      </p>
-
-      <p class="mb-10 xl:text-2xl">
-        Currently fascinated by
+      <p>
+        My current fascinations and learning focuses are
         <HoverableWord
-          image="https://media.giphy.com/media/90CquRgNWDgUcUMlPc/giphy.gif"
-          >Elixir,</HoverableWord
+          image="https://media.giphy.com/media/S984YkgY62vvSUAwhv/giphy.gif"
+          >Micronaut,</HoverableWord
         >
         <HoverableWord
           image="https://media.giphy.com/media/BCIoXfA95d1ba/giphy.gif"
@@ -39,54 +35,11 @@
           >Pizza</HoverableWord
         >🍕
       </p>
-    </div>
-
-    <div>
-      <a
-        class="inline-block border-2 border-current p-2 px-4 w-auto xl:text-2xl xl:p-4 xl:px-8"
-        href="#experience"
-      >
-        Where I've worked →
-      </a>
-    </div>
-  </div>
-
-  <div class="md:ml-8 mb-8 md:mb-0 profile-pic">
-    <img src="/me_bw.jpg" alt="Me in sunglasses on vacation in budapest" />
   </div>
 </section>
 
 <style>
-  .profile-pic {
-    box-shadow: 1rem -1rem 0 #ad1400;
-    transition: 0.3s ease;
-    position: relative;
-    max-width: 66%;
-  }
-
-  .profile-pic::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ad1400;
-    opacity: 0;
-    transition: 0.3s ease;
-    mix-blend-mode: multiply;
-  }
-
-  .profile-pic:hover {
-    box-shadow: 0rem 0rem 0 #ad1400;
-  }
-
-  .profile-pic:hover::after {
-    opacity: 1;
-  }
-
   p {
-    max-width: 40em;
+    max-width: 40ch;
   }
 </style>

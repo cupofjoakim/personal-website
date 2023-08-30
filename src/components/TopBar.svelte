@@ -26,7 +26,7 @@
 
 <div class={`h-4 z-50 topbar`}></div>
 <header class={`z-50 fixed top-0 right-0 left-0 flex`}>
-    <div class={`flex flex-1 px-4 pt-6 pb-4 transition-all duration-500 show-on-scroll transform justify-between items-center flex ${showMenu ? 'opacity-full' : '-translate-y-full opacity-0'}`}>
+    <div class={`flex flex-1 px-4 sm:px-6 pt-6 pb-4 transition-all duration-500 show-on-scroll transform justify-between items-center flex ${showMenu ? '' : '-translate-y-full'}`}>
         <div class="text-2xl fancy font-semibold z-10">
             <a href="#intro">Hej, I'm Joakim.</a>
         </div>
@@ -42,10 +42,10 @@
         <nav class={`relative z-50 inset-0 hidden md:block flex`}>
             <div class="flex-1 flex-row flex justify-center items-center text-base">
                 <div class="flex-row flex">
-                    <a class="md:mr-4" href="#intro" on:click={toggleMenu}>01. Intro</a>
-                    <a class="md:mr-4" href="#about-me" on:click={toggleMenu}>02. About me</a>
-                    <a class="md:mr-4" href="#experience" on:click={toggleMenu}>03. Experience</a>
-                    <a class="md:mr-4" href="#contact" on:click={toggleMenu}>04. Contact</a>
+                    <a class="md:mr-4" href="#intro" on:click={toggleMenu}>Intro</a>
+                    <a class="md:mr-4" href="#about-me" on:click={toggleMenu}>About me</a>
+                    <a class="md:mr-4" href="#experience" on:click={toggleMenu}>Experience</a>
+                    <a class="md:mr-4" href="#contact" on:click={toggleMenu}>Contact</a>
                     <button class="mt-10 block md:hidden" on:click={toggleMenu}>close</button>
                 </div>
             </div>
@@ -55,10 +55,10 @@
         <div class="flex-1 flex-col flex justify-center items-center text-2xl">
             <div class="flex-col flex fancy">
                 <h1 class="mb-12 text-4xl">Hej, I'm Joakim</h1>
-                <a class="mb-6" href="#intro" on:click={toggleMenu}>01. Intro</a>
-                <a class="mb-6" href="#about-me" on:click={toggleMenu}>02. About me</a>
-                <a class="mb-6" href="#experience" on:click={toggleMenu}>03. Experience</a>
-                <a class="mb-6" href="#contact" on:click={toggleMenu}>04. Contact</a>
+                <a class="mb-6" href="#intro" on:click={toggleMenu}>Intro</a>
+                <a class="mb-6" href="#about-me" on:click={toggleMenu}>About me</a>
+                <a class="mb-6" href="#experience" on:click={toggleMenu}>Experience</a>
+                <a class="mb-6" href="#contact" on:click={toggleMenu}>Contact</a>
                 <button class="mt-10 block md:hidden" on:click={toggleMenu}>close</button>
             </div>
         </div>
@@ -68,8 +68,8 @@
 
 <style>
     nav {
-        background: #AD1400;
-        color: #f8efdc;        
+        background: var(--main-accent-color);
+        color: white;        
     }
 
     @media screen and (min-width: 768px) {
@@ -80,12 +80,12 @@
     }
 
     .show-on-scroll {
-        background: #f8efdc;
-        border-bottom: .2rem solid #AD1400;
+        background: white;
+        border-bottom: .2rem solid var(--main-accent-color);
     }
 
     .fancy {
-        font-family: "DM Serif Display", serif;
+        font-family: Roboto, sans-serif;
     }
     
     .topbar {
@@ -94,7 +94,7 @@
         left: 0;
         right: 0;
         height: .5rem;
-        background: #AD1400;
+        background: var(--main-accent-color);
         transition: .5s ease-in-out;
     }
 </style>

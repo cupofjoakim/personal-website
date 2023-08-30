@@ -2,7 +2,7 @@
     {
         "title": "Software Engineer",
         "company": {"name":"Spotify", "link":"https://www.spotify.com/"},
-        "duration": "October 2021 – Present",
+        "duration": "Oct 2021 – Present",
         "details": [
             "Development work on the Soundtrap product, which is a web based DAW and podcast creation app."
         ]
@@ -10,7 +10,7 @@
     {
         "title": "Developer",
         "company": {"name":"SBAB", "link":"https://www.sbab.se/"},
-        "duration": "April 2018 – September 2021",
+        "duration": "Apr 2018 – Sept 2021",
         "details": [
             "I rewrote an internet bank, co-created/maintained a react component library and developed various micro services in java."
         ]
@@ -18,7 +18,7 @@
     {
         "title": "Developer",
         "company": {"name": "Mobility46", "link":"https://www.mobility46.se/"},
-        "duration": "April 2016 – March 2018",
+        "duration": "Apr 2016 – Mar 2018",
         "details": [
             "I designed and developed numerous products such as Park46, a garage managing app, as well as Laddkoll and an administrative tool for garage owners."
         ]
@@ -26,7 +26,7 @@
     {
         "title": "Freelance Developer",
         "company": {"name":"cupofjoakim"},
-        "duration": "August 2015 – April 2016",
+        "duration": "Aug 2015 – Apr 2016",
         "details": [
             "Collaborated with Sebton/Co to develop a web presence for SHHBostad. I also took on web development work for various smaller clients."
         ]
@@ -34,7 +34,7 @@
     {
         "title": "Frontend Developer",
         "company": {"name":"The World Loves"},
-        "duration": "April 2014 – August 2015",
+        "duration": "Apr 2014 – Aug 2015",
         "details": [
             "Development work for Swish, one of Swedens largest payment providers, as well as interface prototyping for a major asian electronics company and conceptual work for Elkjøp."
         ]
@@ -42,7 +42,7 @@
     {
         "title": "Frontend Developer",
         "company": {"name":"River", "link":"https://www.river.se/"},
-        "duration": "March 2013 – March 2014",
+        "duration": "Mar 2013 – Mar 2014",
         "details": [
             "Various ad-related work for clients such as Nike, Mabi and Machinegames. Developed the PS4 companion app for Wolfenstein: The New Order."
         ]

@@ -2,15 +2,21 @@
   import positions from "../positions.json";
 </script>
 
-<section class="mb-14 w-full">
-  <h2 class="text-2xl xl:text-5xl font-bold mb-4 xl:mb-8">Where I've Worked</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+<section class="w-full flex flex-col sm:flex-row">
+  <div class="w-full sm:w-2/5">
+    <h2 class="text-4xl xl:text-5xl font-bold mb-4 sm:pt-8">Experience</h2>
+  </div>
+  <div class="w-full sm:w-3/5 flex flex-col gap-4">
     {#each positions as pos}
-      <div class="position-cell p-8 transform-gpu cursor-text">
-        <h3 class="text-2xl text-center">
+      <div class="p-8 rounded-3xl shadow-2xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-2xl transition-shadow duration-500">
+
+        <div class="flex items-center mb-1">
+          <div class="w-1 h-1 rounded-full bg-accent mr-2"></div>
+          <p class="font-bold text-xs tracking-widest text-accent">{pos.duration}</p>
+        </div>
+        <h3 class="text-2xl font-bold">
           {pos.company.name}
         </h3>
-        <p class="text-center mb-4">{pos.duration}</p>
         {#each pos.details as paragraph}
           <p>{paragraph}</p>
         {/each}
@@ -18,27 +24,13 @@
     {/each}
   </div>
 </section>
-<div class="text-center md:text-left">
-  <a
-    class="sm:block text-lg md:inline-block border-2 border-current p-2 px-4 w-auto xl:text-2xl"
-    href="#contact"
-  >
-    Get in touch →
-  </a>
-</div>
 
 <style>
-  .position-cell {
-    color: #AD1400;
-    background-color: #f8efdc;
-    transition: all .3s ease;
-    border: 3px solid #AD1400;
+  .bg-accent {
+    background-color: var(--main-accent-color);
   }
 
-  .position-cell:hover {
-    transform: scale(1.05);
-    background-color: #AD1400;
-    color: #f8efdc;
-    border-color: transparent;
+  .text-accent {
+    color: var(--main-accent-color);
   }
 </style>

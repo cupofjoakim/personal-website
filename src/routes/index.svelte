@@ -7,9 +7,9 @@
 </script>
 
 <TopBar />
-<main class="flex-1 flex flex-col items-center mt-10 sm:mt-4 text-gray-800">
-  <Blob color="#AD1400" />
-  <article class="px-6 py-4 text-xl flex flex-col justify-center max-w-1024" id="intro">
+<main class="flex-1 flex flex-col items-center mt-10 sm:mt-4 text-gray-800 mb-8">
+  <Blob color="#0000FF" />
+  <article class="px-4 sm:px-6 py-4 text-xl flex flex-col justify-center min-h-screen" id="intro">
     <h1 class="text-7xl	font-semibold z-10">
       Hej, I'm Joakim.
     </h1>
@@ -21,7 +21,7 @@
 
     <div>
       <a
-        class="inline-block border-2 border-current p-2 px-4 w-auto"
+        class="inline-block"
         href="#about-me"
       >
         Learn more →
@@ -29,24 +29,24 @@
     </div>
   </article>
 
-  <article class="px-6 py-4 text-base flex flex-col justify-center" id="about-me">
+  <article class="px-4 sm:px-6 py-4 pt-24 sm:pt-36 text-base flex flex-col justify-center" id="about-me">
     <AboutMe />
   </article>
 
-  <article class="px-6 py-4 text-base flex flex-col justify-center w-full overflow-hidden" id="experience">
+  <article class="px-4 sm:px-6 py-4 pt-24 sm:pt-36 text-base flex flex-col justify-center w-full" id="experience">
     <Experience />
   </article>
 
-  <article class="px-6 py-4 text-base flex flex-col justify-center text-center text-xl md:text-2xl max-w-1024" id="contact">
-    <section>
-      <h2 class="text-7xl	font-semibold mb-8 red-underline">Say Hi!</h2>
+  <article class="px-4 sm:px-6 py-24 text-base flex flex-col justify-center text-center" id="contact">
+    <section class="bg-blue-50 rounded-3xl py-12 md:py-24 px-6 md:px-12">
+      <h2 class="text-4xl	xl:text-5xl font-bold mb-8">Say Hi!</h2>
       <p class="mb-8">While I'm not currently looking for new opportunities, I'm always eager to talk or answer questions. Send me a mail and I'll try my best to get back to you soon-ish!</p>
-      <a class="inline-block border-2 border-current p-2 px-4 w-auto" href="mailto:joakim.wimmerstedt@gmail.com">Drop me a message →</a>
+      <a class="inline-block" href="mailto:joakim.wimmerstedt@gmail.com">📬 Drop me a message →</a>
     </section>
   </article>
 </main>
 
-<footer class="flex-1 flex flex-row justify-center pb-8 -mt-12">
+<footer class="flex-1 flex flex-row justify-center mb-8">
   <a rel="external" href="https://github.com/cupofjoakim" target="_blank" class="mr-4"><img src="/icon-github.svg" alt="Github"></a>
   <a rel="external" href="https://www.linkedin.com/in/joakimwimmerstedt" target="_blank" class="mr-4"><img src="/icon-linkedin.svg" alt="Linkedin"/></a>
   <a rel="external" href="https://twitter.com/cupofjoakim" target="_blank" class="mr-4"><img src="/icon-twitter.svg" alt="Twitter"></a>
@@ -64,33 +64,18 @@
     font-size: 16px;
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 960px) {
     :root {
       font-size: 18px;
     }
   }
 
-  @media only screen and (min-width: 960px) {
-    :root {
-      font-size: 20px;
-    }
-  }
-
   article {
-    min-height: 100vh;
     width: 100%;
-  }
-
-  .max-w-1024 {
     max-width: 1024px;
   }
 
   footer a:hover, footer a:focus {
     opacity: .4;
-  }
-
-  .red-underline {
-    text-decoration: underline;
-    text-decoration-color: #ad1400;
   }
 </style>

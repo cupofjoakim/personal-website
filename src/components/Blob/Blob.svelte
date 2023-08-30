@@ -113,7 +113,7 @@
 
   @media only screen and (min-width: 960px) {
     div {
-      right: 5rem;
+      right: 0rem;
       top: 7rem;
     }
   }

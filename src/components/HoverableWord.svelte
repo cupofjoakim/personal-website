@@ -11,6 +11,7 @@
 	});
 
 	let m = { x: 0, y: 0 };
+	const offset = 10;
 	let isHovering = false;
 
 	function handleMouseMove(event) {
@@ -26,7 +27,7 @@
 
 </script>
 
-<span
+<span class="underline inline-block"
 	on:mouseover={() => updateHover(true)}
 	on:mouseout={() => updateHover(false)}
 	on:mousemove={handleMouseMove}>
@@ -35,8 +36,8 @@
 {#if isHovering}
 	<img
 		src={image}
-		style={`left: ${m.x + 10}px; top: ${m.y + 10}px;`}
-		alt="An animated gif of lesser importance"
+		style={`left: ${m.x + offset}px; top: ${m.y + offset}px;`}
+		alt=""
 	/>
 {/if}
 
@@ -45,10 +46,11 @@
 		display: inline-block;
 		cursor: grab;
 		position: relative;
+		text-decoration-style: dotted;
 	}
 
 	span:hover {
-		color: #AD1400;
+		color: var(--main-accent-color);
 	}
 
 	img {
