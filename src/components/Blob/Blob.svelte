@@ -1,8 +1,8 @@
 <script lang="ts">
   import throttle from 'just-throttle';
-  import { onMount } from "svelte";
-  import Blob from "./Blob";
-	import type Point from './Point';
+  import { onMount } from 'svelte';
+  import Blob from './Blob';
+  import type Point from './Point';
 
   export let color: string;
 
@@ -15,18 +15,18 @@
 
   const init = () => {
     blob = new Blob(canvas, color);
-    canvas.setAttribute("touch-action", "none");
+    canvas.setAttribute('touch-action', 'none');
 
     let resize = function () {
       width = window.innerWidth / 2;
       height = window.innerHeight / 2;
-      if(width < 320) {
+      if (width < 320) {
         width = 320;
         height = 320;
       }
       blob.radius = Math.floor((width > height ? height : width) / 3);
     };
-    window.addEventListener("resize", throttle(resize, 16));
+    window.addEventListener('resize', throttle(resize, 16));
     resize();
 
     blob.init();
@@ -39,7 +39,7 @@
       x: rect.left + window.scrollX,
       y: rect.top + window.scrollY
     };
-  }
+  };
 
   const mouseMove = function (e: MouseEvent) {
     let canvasCenter = blob.center;
@@ -60,7 +60,7 @@
       hover = false;
     }
 
-    if (typeof angle == "number" && angle != null) {
+    if (typeof angle == 'number' && angle != null) {
       let nearestPoint: Point | null = null;
       let distanceFromPoint = 100;
 
@@ -74,10 +74,9 @@
       if (nearestPoint != null) {
         const strength = {
           x: oldMousePoint.x - e.clientX,
-          y: oldMousePoint.y - e.clientY,
+          y: oldMousePoint.y - e.clientY
         };
-        let newStrength =
-          Math.sqrt(strength.x * strength.x + strength.y * strength.y) * 10;
+        let newStrength = Math.sqrt(strength.x * strength.x + strength.y * strength.y) * 10;
         if (newStrength > 100) newStrength = 100;
 
         (nearestPoint as Point).acceleration = (newStrength / 100) * (hover ? -1 : 1);
@@ -94,5 +93,5 @@
 </script>
 
 <div class="dynamic-background absolute z-0 right-0 top-32 sm:top-28">
-  <canvas bind:this={canvas} on:pointermove={throttle(mouseMove, 16)} width={width} height={height} />
+  <canvas bind:this={canvas} on:pointermove={throttle(mouseMove, 16)} {width} {height} />
 </div>

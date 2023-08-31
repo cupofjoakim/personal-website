@@ -1,5 +1,5 @@
 <script>
-  import positions from "../positions.json";
+  import positions from '../positions.json';
 </script>
 
 <section class="w-full flex flex-col sm:flex-row">
@@ -8,10 +8,11 @@
   </div>
   <div class="w-full sm:w-3/5 flex flex-col gap-4">
     {#each positions as pos}
-      <div class="p-8 grid gap-2 rounded-3xl shadow-2xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-2xl transition-shadow duration-500">
-
+      <div
+        class="p-8 grid gap-2 rounded-3xl shadow-2xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-2xl transition-shadow duration-500"
+      >
         <div class="flex items-center mb-1">
-          <div class="w-1 h-1 rounded-full bg-accent mr-2"></div>
+          <div class="w-1 h-1 rounded-full bg-accent mr-2" />
           <p class="font-bold text-xs tracking-widest text-accent">{pos.duration}</p>
         </div>
         <h3 class="text-2xl font-bold">
@@ -29,7 +30,9 @@
         {/each}
         <ul>
           {#each pos.tags as tag}
-            <li class="text-xs inline-block leading-sm px-2 py-1 bg-blue-100 text-blue-700 rounded-full mr-2 mb-2">
+            <li
+              class="text-xs inline-block leading-sm px-2 py-1 bg-blue-100 text-blue-700 rounded-full mr-2 mb-2"
+            >
               {tag}
             </li>
           {/each}
