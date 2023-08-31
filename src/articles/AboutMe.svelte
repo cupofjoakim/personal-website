@@ -18,15 +18,9 @@
 
     <p>
       My current fascinations and learning focuses are
-      <HoverableWord image="/astronaut.webp"
-        >Micronaut,</HoverableWord
-      >
-      <HoverableWord image="/arnold.webp"
-        >Svelte</HoverableWord
-      > and
-      <HoverableWord image="/skelly-pizza.webp"
-        >Pizza</HoverableWord
-      >🍕
+      <HoverableWord image="/astronaut.webp">Micronaut,</HoverableWord>
+      <HoverableWord image="/arnold.webp">Svelte</HoverableWord> and
+      <HoverableWord image="/skelly-pizza.webp">Pizza</HoverableWord>🍕
     </p>
   </div>
 </section>
