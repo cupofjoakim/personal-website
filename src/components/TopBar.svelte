@@ -27,7 +27,7 @@
 <div class={`h-4 z-50 topbar`} />
 <header class={`z-50 fixed top-0 right-0 left-0 flex`}>
   <div
-    class={`flex flex-1 px-4 sm:px-6 pt-6 pb-4 transition-all duration-500 show-on-scroll transform justify-between items-center flex ${
+    class={`flex-1 px-4 sm:px-6 pt-6 pb-4 transition-all duration-500 show-on-scroll transform justify-between items-center flex ${
       showMenu ? '' : '-translate-y-full'
     }`}
   >
@@ -40,7 +40,7 @@
       </svg>
     </button>
 
-    <nav class={`relative z-50 inset-0 hidden md:block flex`}>
+    <nav class={`relative z-50 inset-0 hidden md:flex`}>
       <div class="flex-1 flex-row flex justify-center items-center text-base">
         <div class="flex-row flex">
           <a class="md:mr-4" href="#intro" on:click={toggleMenu}>Intro</a>
@@ -73,7 +73,7 @@
 <style lang="postcss">
   nav {
     background: var(--main-accent-color);
-    color: white;
+    color: var(--main-bg-color);
   }
 
   @media screen and (min-width: 768px) {
@@ -84,7 +84,7 @@
   }
 
   .show-on-scroll {
-    background: white;
+    background: var(--main-bg-color);
     border-bottom: 0.2rem solid var(--main-accent-color);
   }
 

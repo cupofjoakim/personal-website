@@ -11,8 +11,8 @@
 >
   <h1 class="text-7xl font-semibold z-10">Hej, I'm Joakim.</h1>
 
-  <p class="my-10 text-3xl max-w-l lg:max-w-xl lg:max-w-2xl z-10">
-    I’m a fullstack developer based in Stockholm, Sweden. I build things to solve problems.
+  <p class="my-10 text-3xl max-w-l md:max-w-xl lg:max-w-2xl z-10">
+    I'm a fullstack developer based in Stockholm, Sweden. I build things to solve problems.
   </p>
 
   <div>
