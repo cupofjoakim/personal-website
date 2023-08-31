@@ -5,11 +5,14 @@
     <link rel="icon" href="https://fav.farm/🎉" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="DNS-prefetch" href="//fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Nunito:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Nunito:wght@400;700&display=swap"
@@ -17,7 +20,11 @@
       onload="this.media='all'"
     />
 
-    <title>Joakim Wimmerstedt - Full stack developer</title>
+    <title>Joakim Wimmerstedt - Senior Fullstack Engineer</title>
+    <meta
+      name="description"
+      content="I'm a senior fullstack engineer based in Stockholm, Sweden. I build things to solve problems."
+    />
 
     %sveltekit.head%
 
@@ -25,7 +32,9 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FVSBG2N2T"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'G-0FVSBG2N2T');

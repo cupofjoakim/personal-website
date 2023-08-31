@@ -34,7 +34,7 @@
     <div class="text-2xl fancy font-semibold z-10">
       <a href="#intro">Hej, I'm Joakim.</a>
     </div>
-    <button on:click={toggleMenu} class="db md:hidden">
+    <button on:click={toggleMenu} aria-label="Open menu" class="db md:hidden">
       <svg viewBox="-5 0 10 8" width="40" height="40">
         <line y2="8" stroke="currentColor" stroke-width="10" stroke-dasharray="1 2" />
       </svg>
@@ -53,7 +53,6 @@
     </nav>
   </div>
   <nav
-    aria-hidden="true"
     class={`fixed z-50 inset-0 md:hidden flex transition-transform duration-500 transform ${
       expanded ? '' : 'translate-x-full'
     }`}
