@@ -16,7 +16,10 @@
         </div>
         <h3 class="text-2xl font-bold">
           {#if pos.company.link}
-            <a href={pos.company.link} target="_blank">{pos.company.name}</a>
+            <a href={pos.company.link} target="_blank" class="group flex items-center">
+              {pos.company.name}
+              <span class="ml-1 hidden group-hover:inline-block text-base">🔗</span>
+            </a>
           {:else}
             {pos.company.name}
           {/if}
