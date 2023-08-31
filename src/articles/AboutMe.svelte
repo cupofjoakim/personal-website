@@ -9,7 +9,7 @@
       >me</HoverableWord
     ></h2>
   </div>
-  <div class="w-full sm:w-3/5 flex flex-col gap-4 sm:pl-8">
+  <div class="w-full sm:w-3/5 flex flex-col max-w-prose gap-4 sm:pl-8">
       <p class="mb-2">
         Hej! I'm Joakim, a senior software engineer based in Stockholm, Sweden.
       </p>
@@ -37,9 +37,3 @@
       </p>
   </div>
 </section>
-
-<style>
-  p {
-    max-width: 40ch;
-  }
-</style>

@@ -66,7 +66,7 @@
 </header>
 
 
-<style>
+<style lang="postcss">
     nav {
         background: var(--main-accent-color);
         color: white;        

@@ -53,7 +53,7 @@
   <a rel="me" href="https://mas.to/@cupofjoakim" target="_blank"><img src="/icon-mastodon.svg" alt="Mastodon"></a>
 </footer>
 
-<style>
+<style lang="postcss">
   * {
     box-sizing: border-box;
   }

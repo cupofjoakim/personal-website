@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-bg-color: white;
+  --main-accent-color: blue;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overscroll-behavior-x: none;
+}
+
+a:hover {
+  color: var(--main-accent-color);
+}
+
+#svelte {
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Roboto, sans-serif;
+}

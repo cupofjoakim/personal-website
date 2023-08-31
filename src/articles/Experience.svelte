@@ -36,7 +36,7 @@
   </div>
 </section>
 
-<style>
+<style lang="postcss">
   .bg-accent {
     background-color: var(--main-accent-color);
   }

@@ -27,7 +27,7 @@
 
 </script>
 
-<span class="underline inline-block"
+<span class="underline decoration-dotted cursor-grab inline-block relative"
 	on:mouseover={() => updateHover(true)}
 	on:mouseout={() => updateHover(false)}
 	on:mousemove={handleMouseMove}>
@@ -35,27 +35,15 @@
 </span>
 {#if isHovering}
 	<img
+		class="absolute pointer-events-none w-60"
 		src={image}
 		style={`left: ${m.x + offset}px; top: ${m.y + offset}px;`}
 		alt=""
 	/>
 {/if}
 
-<style>
-	span {
-		display: inline-block;
-		cursor: grab;
-		position: relative;
-		text-decoration-style: dotted;
-	}
-
+<style lang="postcss">
 	span:hover {
 		color: var(--main-accent-color);
-	}
-
-	img {
-		position: absolute;
-		width: 15rem;
-		pointer-events: none;
 	}
 </style>

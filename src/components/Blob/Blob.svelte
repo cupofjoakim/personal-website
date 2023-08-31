@@ -93,30 +93,6 @@
   });
 </script>
 
-<style>
-  /* Please don't judge my placements */
-  div {
-    position: absolute;
-    z-index: 0;
-    right: 0rem;
-    top: 8rem;
-  }
-
-  @media only screen and (min-width: 600px) {
-    div {
-      right: 0rem;
-      top: 7rem;
-    }
-  }
-
-  @media only screen and (min-width: 960px) {
-    div {
-      right: 0rem;
-      top: 7rem;
-    }
-  }
-</style>
-
-<div class="dynamic-background">
+<div class="dynamic-background absolute z-0 right-0 top-32 sm:top-28">
   <canvas bind:this={canvas} on:pointermove={throttle(mouseMove, 16)} width={width} height={height} />
 </div>
