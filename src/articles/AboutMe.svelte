@@ -18,13 +18,13 @@
 
     <p>
       My current fascinations and learning focuses are
-      <HoverableWord image="https://media.giphy.com/media/S984YkgY62vvSUAwhv/giphy.gif"
+      <HoverableWord image="/astronaut.webp"
         >Micronaut,</HoverableWord
       >
-      <HoverableWord image="https://media.giphy.com/media/BCIoXfA95d1ba/giphy.gif"
+      <HoverableWord image="/arnold.webp"
         >Svelte</HoverableWord
       > and
-      <HoverableWord image="https://media.giphy.com/media/sTUWqCKtxd01W/giphy.gif"
+      <HoverableWord image="/skelly-pizza.webp"
         >Pizza</HoverableWord
       >🍕
     </p>
