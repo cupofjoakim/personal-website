@@ -21,10 +21,10 @@
 
     <div>
       <a
-        class="inline-block"
+        class="inline-block group transition-all"
         href="#about-me"
       >
-        Learn more →
+        Learn more <span class="inline-block transition-all group-hover:translate-x-4">→</span>
       </a>
     </div>
   </article>
@@ -41,7 +41,9 @@
     <section class="bg-blue-50 rounded-3xl py-12 md:py-24 px-6 md:px-12">
       <h2 class="text-4xl	xl:text-5xl font-bold mb-8">Say Hi!</h2>
       <p class="mb-8">While I'm not currently looking for new opportunities, I'm always eager to talk or answer questions. Send me a mail and I'll try my best to get back to you soon-ish!</p>
-      <a class="inline-block" href="mailto:joakim.wimmerstedt@gmail.com">📬 Drop me a message →</a>
+      <a class="inline-block group transition-all" href="mailto:joakim.wimmerstedt@gmail.com">
+        📬 Drop me a message <span class="inline-block transition-all group-hover:translate-x-4">→</span>
+      </a>
     </section>
   </article>
 </main>
