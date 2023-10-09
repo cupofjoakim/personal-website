@@ -1,5 +1,18 @@
 [
   {
+    "title": "Senior Software Engineer",
+    "company": { "name": "Storytel", "link": "https://www.storytel.com/"},
+    "duration": "Oct 2023 - Now",
+    "details": ["This is my current role. I'm helping with the growth domain - we do tons of stuff on storytel.com."],
+    "tags": [
+      "next.js",
+      "react",
+      "java",
+      "typescript",
+      "a/b-testing"
+    ]
+  },
+  {
     "title": "Software Engineer",
     "company": { "name": "Spotify", "link": "https://www.spotify.com/" },
     "duration": "Oct 2021 – Sept 2023",
