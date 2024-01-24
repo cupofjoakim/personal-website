@@ -24,6 +24,14 @@
   };
 
   const toggleMenu = () => (expanded = !expanded);
+
+  const links = Object.entries({
+    '/#intro': 'Intro',
+    '/#about-me': 'About me',
+    '/#experience': 'Experience',
+    '/#contact': 'Contact',
+    '/posts': 'Posts',
+  });
 </script>
 
 <svelte:window on:scroll={throttle(handleScroll, 200)} />
@@ -36,7 +44,7 @@
     }`}
   >
     <div class="text-2xl fancy font-semibold z-10">
-      <a href="#intro">Hej, I'm Joakim.</a>
+      <a href="/#intro">Hej, I'm Joakim.</a>
     </div>
     <button on:click={toggleMenu} aria-label="Open menu" class="db md:hidden">
       <svg viewBox="-5 0 10 8" width="40" height="40">
@@ -47,10 +55,9 @@
     <nav class={`relative z-50 inset-0 hidden md:flex`}>
       <div class="flex-1 flex-row flex justify-center items-center text-base">
         <div class="flex-row flex">
-          <a class="md:mr-4" href="#intro" on:click={toggleMenu}>Intro</a>
-          <a class="md:mr-4" href="#about-me" on:click={toggleMenu}>About me</a>
-          <a class="md:mr-4" href="#experience" on:click={toggleMenu}>Experience</a>
-          <a class="md:mr-4" href="#contact" on:click={toggleMenu}>Contact</a>
+          {#each links as [link, text]}
+            <a class="md:mr-4" href={link} on:click={toggleMenu}>{text}</a>
+          {/each}
           <button class="mt-10 block md:hidden" on:click={toggleMenu}>close</button>
         </div>
       </div>
@@ -64,10 +71,9 @@
     <div class="flex-1 flex-col flex justify-center items-center text-2xl">
       <div class="flex-col flex fancy">
         <h1 class="mb-12 text-4xl">Hej, I'm Joakim</h1>
-        <a class="mb-6" href="#intro" on:click={toggleMenu}>Intro</a>
-        <a class="mb-6" href="#about-me" on:click={toggleMenu}>About me</a>
-        <a class="mb-6" href="#experience" on:click={toggleMenu}>Experience</a>
-        <a class="mb-6" href="#contact" on:click={toggleMenu}>Contact</a>
+        {#each links as [link, text]}
+          <a class="mb-6" href={link} on:click={toggleMenu}>{text}</a>
+        {/each}
         <button class="mt-10 block md:hidden" on:click={toggleMenu}>close</button>
       </div>
     </div>
