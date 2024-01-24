@@ -1,12 +1,16 @@
 <script lang="ts">
   import throttle from 'just-throttle';
 
+  export let alwaysExpanded = false;
+
   let expanded = false;
   let lastY = 0;
   let scrollGoingDown = true;
-  let showMenu = false;
+  let showMenu = alwaysExpanded;
 
   const handleScroll = (e: UIEvent) => {
+    if (alwaysExpanded) return;
+
     var st = window.pageYOffset || document.documentElement.scrollTop;
     if (st === 0) {
       scrollGoingDown = true;
