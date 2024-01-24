@@ -1,7 +1,11 @@
 <script>
   import AboutMe from '../articles/AboutMe.svelte';
   import Experience from '../articles/Experience.svelte';
+  import Posts from '../articles/Posts.svelte';
   import Blob from '../components/Blob/Blob.svelte';
+
+  export let data;
+
 </script>
 
 <Blob color="#0000FF" />
@@ -34,6 +38,13 @@
   id="experience"
 >
   <Experience />
+</article>
+
+<article
+  class="px-4 sm:px-6 py-4 pt-24 sm:pt-36 text-base flex flex-col justify-center max-w-screen-lg w-full"
+  id="posts"
+>
+  <Posts posts={data.posts} />
 </article>
 
 <article

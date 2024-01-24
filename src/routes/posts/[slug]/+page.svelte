@@ -4,6 +4,11 @@
   export let data;
 </script>
 
+<svelte:head>
+  <title>{data.meta.title} | Joakim Wimmerstedt</title>
+  <meta name="description" content={data.meta.excerpt}>
+</svelte:head>
+
 <div class="px-4 sm:px-6 py-4 text-base flex flex-col justify-center max-w-screen-md w-full">
   <a class="inline-block group transition-all" href="/posts">
     <span class="inline-block transition-all group-hover:-translate-x-4">←</span>

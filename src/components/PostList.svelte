@@ -1,16 +1,10 @@
-<script>
-  export let data;
+<script lang="ts">
+  import type { Post } from "$lib/types";
 
-  const posts = data?.posts || [];
-
+  export let posts: Post[];
 </script>
 
-<svelte:head>
-  <title>Posts | Joakim Wimmerstedt</title>
-  <meta name="description" content="Thoughts and stuff by Joakim Wimmerstedt">
-</svelte:head>
-
-<div class="px-4 sm:px-6 py-4 text-base flex flex-col justify-center max-w-screen-md w-full">
+<div class="text-base flex flex-col justify-center max-w-screen-md w-full">
   {#each posts as post}
   <div
         class="p-8 grid gap-2 rounded-3xl shadow-2xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-2xl transition-shadow duration-500"
