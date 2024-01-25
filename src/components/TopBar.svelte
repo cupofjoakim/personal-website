@@ -7,7 +7,7 @@
     '/#about-me': 'About me',
     '/#experience': 'Experience',
     '/#contact': 'Contact',
-    '/posts': 'Posts',
+    '/#posts': 'Posts',
   });
 </script>
 
