@@ -1,28 +1,5 @@
 <script lang="ts">
-  import throttle from 'just-throttle';
-
-  export let alwaysExpanded = false;
-
   let expanded = false;
-  let lastY = 0;
-  let scrollGoingDown = true;
-  let showMenu = alwaysExpanded;
-
-  const handleScroll = (e: UIEvent) => {
-    if (alwaysExpanded) return;
-
-    var st = window.pageYOffset || document.documentElement.scrollTop;
-    if (st === 0) {
-      scrollGoingDown = true;
-      showMenu = false;
-    } else {
-      scrollGoingDown = st > lastY;
-      showMenu = true;
-    }
-
-    lastY = st <= 0 ? 0 : st;
-  };
-
   const toggleMenu = () => (expanded = !expanded);
 
   const links = Object.entries({
@@ -34,14 +11,10 @@
   });
 </script>
 
-<svelte:window on:scroll={throttle(handleScroll, 200)} />
-
 <div class={`h-4 z-50 topbar`} />
 <header class={`z-50 fixed top-0 right-0 left-0 flex`}>
   <div
-    class={`flex-1 px-4 sm:px-6 pt-6 pb-4 transition-all duration-500 show-on-scroll transform justify-between items-center flex ${
-      showMenu ? '' : '-translate-y-full'
-    }`}
+    class={`flex-1 px-4 sm:px-6 pt-6 pb-4 transition-all duration-500 show-on-scroll transform justify-between items-center flex`}
   >
     <div class="text-2xl fancy font-semibold z-10">
       <a href="/#intro">Hej, I'm Joakim.</a>

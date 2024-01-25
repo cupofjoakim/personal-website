@@ -15,7 +15,7 @@
     Posts</a>
 </div>
 
-<article class="px-4 sm:px-6 py-4 text-base flex flex-col justify-center max-w-screen-md w-full">
+<article class="px-4 sm:px-6 py-4 text-base flex flex-col justify-center max-w-screen-md w-full overflow-hidden">
   <time datetime={data.meta.date} class="mb-4">{data.meta.date}</time>
   <h1 class="text-4xl xl:text-5xl font-bold mb-4 xl:mb-8">{data.meta.title}</h1>
   <div class="post-wrapper">
