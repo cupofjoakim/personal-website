@@ -9,7 +9,7 @@ let { posts }: { posts: Post[] } = $props();
       class="p-8 grid gap-2 rounded-3xl shadow-2xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-2xl transition-shadow duration-500"
     >
       <div class="flex items-center mb-1">
-        <div class="w-1 h-1 rounded-full bg-accent mr-2" />
+        <div class="w-1 h-1 rounded-full bg-accent mr-2"></div>
         <p class="font-bold text-xs tracking-widest text-accent"><time datetime="{post.date}">{post.date}</time></p>
       </div>
       <h3 class="text-2xl font-bold">

@@ -19,7 +19,10 @@ let { data } = $props();
   <time datetime={data.meta.date} class="mb-4">{data.meta.date}</time>
   <h1 class="text-4xl xl:text-5xl font-bold mb-4 xl:mb-8">{data.meta.title}</h1>
   <div class="post-wrapper">
-    <svelte:component this={data.content} />
+    {#if data.content}
+      {@const Component = data.content}
+      <Component />
+    {/if}
   </div>
   <address class="mv-4 not-italic"><a href={data.meta.author_url}>{data.meta.author}</a></address>
 </article>

@@ -98,5 +98,5 @@ onMount(() => {
 </script>
 
 <div class="dynamic-background absolute z-0 right-0 top-32 sm:top-28">
-  <canvas bind:this={canvas} on:pointermove={throttle(mouseMove, 16)} {width} {height} />
+  <canvas bind:this={canvas} onpointermove={throttle(mouseMove, 16)} {width} {height}></canvas>
 </div>

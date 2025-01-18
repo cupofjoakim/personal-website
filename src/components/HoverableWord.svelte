@@ -1,7 +1,7 @@
 <script lang="ts">
-import { onMount } from "svelte";
+import { type Snippet, onMount } from "svelte";
 
-let { image }: { image: string } = $props();
+let { image, children }: { image: string; children: Snippet } = $props();
 
 onMount(async () => {
 	if (image) {
@@ -29,14 +29,14 @@ function updateHover(newStatus: boolean) {
 
 <span
   class="underline decoration-dotted cursor-grab inline-block relative"
-  on:mouseover={() => updateHover(true)}
-  on:focus={() => {}}
-  on:blur={() => {}}
-  on:mouseout={() => updateHover(false)}
-  on:mousemove={handleMouseMove}
+  onmouseover={() => updateHover(true)}
+  onfocus={() => {}}
+  onblur={() => {}}
+  onmouseout={() => updateHover(false)}
+  onmousemove={handleMouseMove}
   role="emphasis"
 >
-  <slot />
+  {@render children?.()}
 </span>
 {#if isHovering}
   <img
