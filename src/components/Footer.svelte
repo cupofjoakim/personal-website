@@ -17,18 +17,10 @@
   </a>
   <a
     rel="external"
-    href="https://twitter.com/cupofjoakim"
-    target="_blank"
-    class="mr-4 hover:opacity-40 focus:opacity-40"
-  >
-    <img width="24" height="24" src="/icon-twitter.svg" alt="Twitter" />
-  </a>
-  <a
-    rel="me"
-    href="https://mas.to/@cupofjoakim"
+    href="https://bsky.app/profile/cupofjoakim.bsky.social"
     target="_blank"
     class="hover:opacity-40 focus:opacity-40"
   >
-    <img width="24" height="24" src="/icon-mastodon.svg" alt="Mastodon" />
+    <img width="24" height="24" src="/icon-bluesky.svg" alt="Bluesky" />
   </a>
 </footer>
