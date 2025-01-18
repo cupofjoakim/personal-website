@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { Post } from "$lib/types";
 
-export let posts: Post[];
+let { posts }: { posts: Post[] } = $props();
 </script>
 
 {#each posts as post}

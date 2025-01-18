@@ -1,8 +1,7 @@
 <script>
 import PostList from "../../components/PostList.svelte";
 
-export let data;
-
+let { data } = $props();
 const posts = data?.posts || [];
 </script>
 

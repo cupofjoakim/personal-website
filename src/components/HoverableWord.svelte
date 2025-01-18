@@ -1,6 +1,7 @@
 <script lang="ts">
 import { onMount } from "svelte";
-export let image: string;
+
+let { image }: { image: string } = $props();
 
 onMount(async () => {
 	if (image) {
@@ -12,7 +13,7 @@ onMount(async () => {
 
 const m = { x: 0, y: 0 };
 const offset = 10;
-let isHovering = false;
+let isHovering = $state(false);
 
 function handleMouseMove(event: MouseEvent) {
 	requestAnimationFrame(() => {

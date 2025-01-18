@@ -4,14 +4,14 @@ import { onMount } from "svelte";
 import Blob from "./Blob";
 import type Point from "./Point";
 
-export let color: string;
+let { color }: { color: string } = $props();
 
 let canvas: HTMLCanvasElement;
-let blob: Blob;
-let width = 320;
-let height = 320;
+let blob: Blob = $state(new Blob(null, color));
+let width = $state(320);
+let height = $state(320);
+let hover = $state(false);
 const oldMousePoint = { x: 0, y: 0 };
-let hover = false;
 
 const init = () => {
 	blob = new Blob(canvas, color);

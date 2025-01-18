@@ -4,7 +4,7 @@ import Experience from "../articles/Experience.svelte";
 import Posts from "../articles/Posts.svelte";
 import Blob from "../components/Blob/Blob.svelte";
 
-export let data;
+let { data } = $props();
 </script>
 
 <Blob color="#0000FF" />

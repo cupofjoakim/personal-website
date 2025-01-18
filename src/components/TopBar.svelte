@@ -1,5 +1,5 @@
 <script lang="ts">
-let expanded = false;
+let expanded = $state(false);
 const toggleMenu = () => {
 	expanded = !expanded;
 };
@@ -13,7 +13,7 @@ const links = Object.entries({
 });
 </script>
 
-<div class={`h-4 z-50 topbar`} />
+<div class={`h-4 z-50 topbar`}></div>
 <header class={`z-50 fixed top-0 right-0 left-0 flex`}>
   <div
     class={`flex-1 px-4 sm:px-6 pt-6 pb-4 transition-all duration-500 show-on-scroll transform justify-between items-center flex`}

@@ -2,7 +2,7 @@
 import type { Post } from "$lib/types";
 import PostList from "../components/PostList.svelte";
 
-export let posts: Post[];
+let { posts }: { posts: Post[] } = $props();
 </script>
 
 <section class="w-full flex flex-col sm:flex-row">
