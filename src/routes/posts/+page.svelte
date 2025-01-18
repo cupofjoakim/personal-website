@@ -1,10 +1,9 @@
 <script>
-  import PostList from "../../components/PostList.svelte";
+import PostList from "../../components/PostList.svelte";
 
-  export let data;
+export let data;
 
-  const posts = data?.posts || [];
-
+const posts = data?.posts || [];
 </script>
 
 <svelte:head>

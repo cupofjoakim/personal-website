@@ -1,5 +1,5 @@
 <script>
-  import positions from '../positions.json';
+import positions from "../positions.json";
 </script>
 
 <section class="w-full flex flex-col sm:flex-row">

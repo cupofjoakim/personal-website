@@ -1,29 +1,29 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  export let image: string;
+import { onMount } from "svelte";
+export let image: string;
 
-  onMount(async () => {
-    if (image) {
-      const preload = new Image();
-      preload.src = image;
-      preload.onload = () => {};
-    }
-  });
+onMount(async () => {
+	if (image) {
+		const preload = new Image();
+		preload.src = image;
+		preload.onload = () => {};
+	}
+});
 
-  let m = { x: 0, y: 0 };
-  const offset = 10;
-  let isHovering = false;
+const m = { x: 0, y: 0 };
+const offset = 10;
+let isHovering = false;
 
-  function handleMouseMove(event: MouseEvent) {
-    requestAnimationFrame(() => {
-      m.x = event.pageX;
-      m.y = event.pageY;
-    });
-  }
+function handleMouseMove(event: MouseEvent) {
+	requestAnimationFrame(() => {
+		m.x = event.pageX;
+		m.y = event.pageY;
+	});
+}
 
-  function updateHover(newStatus: boolean) {
-    isHovering = newStatus;
-  }
+function updateHover(newStatus: boolean) {
+	isHovering = newStatus;
+}
 </script>
 
 <span

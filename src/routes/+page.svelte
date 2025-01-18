@@ -1,11 +1,10 @@
 <script>
-  import AboutMe from '../articles/AboutMe.svelte';
-  import Experience from '../articles/Experience.svelte';
-  import Posts from '../articles/Posts.svelte';
-  import Blob from '../components/Blob/Blob.svelte';
+import AboutMe from "../articles/AboutMe.svelte";
+import Experience from "../articles/Experience.svelte";
+import Posts from "../articles/Posts.svelte";
+import Blob from "../components/Blob/Blob.svelte";
 
-  export let data;
-
+export let data;
 </script>
 
 <Blob color="#0000FF" />

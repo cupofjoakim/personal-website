@@ -1,5 +1,5 @@
 <script>
-  import HoverableWord from '../components/HoverableWord.svelte';
+import HoverableWord from "../components/HoverableWord.svelte";
 </script>
 
 <section class="w-full flex flex-col sm:flex-row">

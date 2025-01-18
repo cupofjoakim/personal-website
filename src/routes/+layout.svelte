@@ -1,8 +1,7 @@
 <script>
-  import '../app.css';
-  import TopBar from '../components/TopBar.svelte';
-  import Footer from '../components/Footer.svelte';
-
+import "../app.css";
+import Footer from "../components/Footer.svelte";
+import TopBar from "../components/TopBar.svelte";
 </script>
 
 <TopBar />

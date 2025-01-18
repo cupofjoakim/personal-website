@@ -1,7 +1,8 @@
 <script lang="ts">
-  import './posts.css';
+import "./posts.css";
 
-  export let data;
+// biome-ignore lint/suspicious/noImplicitAnyLet: <explanation>
+export let data;
 </script>
 
 <svelte:head>

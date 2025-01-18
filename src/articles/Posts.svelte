@@ -1,8 +1,8 @@
 <script lang="ts">
-  import type { Post } from "$lib/types";
-  import PostList from "../components/PostList.svelte";
+import type { Post } from "$lib/types";
+import PostList from "../components/PostList.svelte";
 
-  export let posts: Post[];
+export let posts: Post[];
 </script>
 
 <section class="w-full flex flex-col sm:flex-row">

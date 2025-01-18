@@ -1,14 +1,16 @@
 <script lang="ts">
-  let expanded = false;
-  const toggleMenu = () => (expanded = !expanded);
+let expanded = false;
+const toggleMenu = () => {
+	expanded = !expanded;
+};
 
-  const links = Object.entries({
-    '/#intro': 'Intro',
-    '/#about-me': 'About me',
-    '/#experience': 'Experience',
-    '/#contact': 'Contact',
-    '/#posts': 'Posts',
-  });
+const links = Object.entries({
+	"/#intro": "Intro",
+	"/#about-me": "About me",
+	"/#experience": "Experience",
+	"/#contact": "Contact",
+	"/#posts": "Posts",
+});
 </script>
 
 <div class={`h-4 z-50 topbar`} />

@@ -1,93 +1,96 @@
 [
-  {
-    "title": "Senior Software Engineer",
-    "company": { "name": "Storytel", "link": "https://www.storytel.com/"},
-    "duration": "Oct 2023 - Now",
-    "details": ["This is my current role. I'm helping with the growth domain - we do tons of stuff on storytel.com."],
-    "tags": [
-      "next.js",
-      "react",
-      "java",
-      "typescript",
-      "a/b-testing"
-    ]
-  },
-  {
-    "title": "Software Engineer",
-    "company": { "name": "Spotify", "link": "https://www.spotify.com/" },
-    "duration": "Oct 2021 – Sept 2023",
-    "details": [
-      "Development work on the Soundtrap product. Did everything from new frontends in next.js to micro services in java, new features in a custom music studio in dart and data pipelines in python and scala on apache beam.",
-      "Here I worked extensively with A/B-testing and data-based product decisions."
-    ],
-    "tags": [
-      "next.js",
-      "react",
-      "react native",
-      "angular",
-      "java",
-      "typescript",
-      "dart",
-      "scala",
-      "python",
-      "apache beam",
-      "a/b-testing"
-    ]
-  },
-  {
-    "title": "Developer",
-    "company": { "name": "SBAB", "link": "https://www.sbab.se/" },
-    "duration": "Apr 2018 – Sept 2021",
-    "details": [
-      "Rewrote an internet bank, co-created/maintained a react component library and developed various micro services in java.",
-      "Co-headed an internal frontend forum and developed signing integrations to BankID."
-    ],
-    "tags": [
-      "react",
-      "spring boot",
-      "java",
-      "typescript",
-      "dart",
-      "oracle sql",
-      "graphql",
-      "apollo"
-    ]
-  },
-  {
-    "title": "Developer",
-    "company": { "name": "Mobility46", "link": "https://www.mobility46.se/" },
-    "duration": "Apr 2016 – Mar 2018",
-    "details": [
-      "I was developer #2 at this successful startup where I designed and developed numerous products such as Park46, a garage managing app, as well as Laddkoll and an administrative tool for garage owners.",
-      "I also helped coin the company name!"
-    ],
-    "tags": ["react", "react-native", "ruby on rails", "typescript", "postgres", "redis"]
-  },
-  {
-    "title": "Freelance Developer",
-    "company": { "name": "cupofjoakim" },
-    "duration": "Aug 2015 – Apr 2016",
-    "details": [
-      "Short stint in freelancing where I collaborated with Sebton/Co to develop a web presence for SHHBostad. I also took on web development work for smaller clients."
-    ],
-    "tags": ["javascript", "react", "wordpress", "php"]
-  },
-  {
-    "title": "Frontend Developer",
-    "company": { "name": "The World Loves" },
-    "duration": "Apr 2014 – Aug 2015",
-    "details": [
-      "Developed and maintained the official Swish website and helped develop a refresh of the app design. I also did prototyping work for Samsung and Elkjøp."
-    ],
-    "tags": ["javascript", "angularjs", "wordpress", "php"]
-  },
-  {
-    "title": "Frontend Developer",
-    "company": { "name": "River", "link": "https://www.river.se/" },
-    "duration": "Mar 2013 – Mar 2014",
-    "details": [
-      "Frontend work in various marketing projects for clients such as Nike, Mabi and Machinegames. Developed the PS4 companion app for Wolfenstein: The New Order."
-    ],
-    "tags": ["javascript", "angularjs", "php"]
-  }
+	{
+		"title": "Senior Software Engineer",
+		"company": { "name": "Storytel", "link": "https://www.storytel.com/" },
+		"duration": "Oct 2023 - Now",
+		"details": [
+			"This is my current role. I'm helping with the growth domain - we do tons of stuff on storytel.com."
+		],
+		"tags": ["next.js", "react", "java", "typescript", "a/b-testing"]
+	},
+	{
+		"title": "Software Engineer",
+		"company": { "name": "Spotify", "link": "https://www.spotify.com/" },
+		"duration": "Oct 2021 – Sept 2023",
+		"details": [
+			"Development work on the Soundtrap product. Did everything from new frontends in next.js to micro services in java, new features in a custom music studio in dart and data pipelines in python and scala on apache beam.",
+			"Here I worked extensively with A/B-testing and data-based product decisions."
+		],
+		"tags": [
+			"next.js",
+			"react",
+			"react native",
+			"angular",
+			"java",
+			"typescript",
+			"dart",
+			"scala",
+			"python",
+			"apache beam",
+			"a/b-testing"
+		]
+	},
+	{
+		"title": "Developer",
+		"company": { "name": "SBAB", "link": "https://www.sbab.se/" },
+		"duration": "Apr 2018 – Sept 2021",
+		"details": [
+			"Rewrote an internet bank, co-created/maintained a react component library and developed various micro services in java.",
+			"Co-headed an internal frontend forum and developed signing integrations to BankID."
+		],
+		"tags": [
+			"react",
+			"spring boot",
+			"java",
+			"typescript",
+			"dart",
+			"oracle sql",
+			"graphql",
+			"apollo"
+		]
+	},
+	{
+		"title": "Developer",
+		"company": { "name": "Mobility46", "link": "https://www.mobility46.se/" },
+		"duration": "Apr 2016 – Mar 2018",
+		"details": [
+			"I was developer #2 at this successful startup where I designed and developed numerous products such as Park46, a garage managing app, as well as Laddkoll and an administrative tool for garage owners.",
+			"I also helped coin the company name!"
+		],
+		"tags": [
+			"react",
+			"react-native",
+			"ruby on rails",
+			"typescript",
+			"postgres",
+			"redis"
+		]
+	},
+	{
+		"title": "Freelance Developer",
+		"company": { "name": "cupofjoakim" },
+		"duration": "Aug 2015 – Apr 2016",
+		"details": [
+			"Short stint in freelancing where I collaborated with Sebton/Co to develop a web presence for SHHBostad. I also took on web development work for smaller clients."
+		],
+		"tags": ["javascript", "react", "wordpress", "php"]
+	},
+	{
+		"title": "Frontend Developer",
+		"company": { "name": "The World Loves" },
+		"duration": "Apr 2014 – Aug 2015",
+		"details": [
+			"Developed and maintained the official Swish website and helped develop a refresh of the app design. I also did prototyping work for Samsung and Elkjøp."
+		],
+		"tags": ["javascript", "angularjs", "wordpress", "php"]
+	},
+	{
+		"title": "Frontend Developer",
+		"company": { "name": "River", "link": "https://www.river.se/" },
+		"duration": "Mar 2013 – Mar 2014",
+		"details": [
+			"Frontend work in various marketing projects for clients such as Nike, Mabi and Machinegames. Developed the PS4 companion app for Wolfenstein: The New Order."
+		],
+		"tags": ["javascript", "angularjs", "php"]
+	}
 ]

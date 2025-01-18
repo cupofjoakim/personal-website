@@ -1,7 +1,7 @@
 <script lang="ts">
-  import type { Post } from "$lib/types";
+import type { Post } from "$lib/types";
 
-  export let posts: Post[];
+export let posts: Post[];
 </script>
 
 {#each posts as post}
