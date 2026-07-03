@@ -1,5 +1,5 @@
 <script lang="ts">
-import { type Snippet, onMount } from "svelte";
+import { onMount, type Snippet } from "svelte";
 
 let { image, children }: { image: string; children: Snippet } = $props();
 

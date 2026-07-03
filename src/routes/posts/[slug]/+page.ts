@@ -1,5 +1,5 @@
-import type { Post } from "$lib/types";
 import { error } from "@sveltejs/kit";
+import type { Post } from "$lib/types";
 
 export const prerender = true;
 
@@ -11,7 +11,7 @@ export async function load({ params }) {
 			content: post.default,
 			meta: post.metadata as Post,
 		};
-	} catch (e) {
+	} catch {
 		error(404, `Could not find ${params.slug}`);
 	}
 }
