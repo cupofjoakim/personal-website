@@ -4,7 +4,8 @@
 		"company": { "name": "Storytel", "link": "https://www.storytel.com/" },
 		"duration": "Oct 2023 - Now",
 		"details": [
-			"This is my current role. I'm helping with the growth domain - we do tons of stuff on storytel.com."
+			"Maintaining storytel.com. This includes integrations towards bespoke systems, architecture for high volume traffic and everything from edge compute workers to pubsub handling in GCP.",
+			"We also develop the checkout experience, which includes various requirements for passing PCI compliancy."
 		],
 		"tags": ["next.js", "react", "java", "typescript", "a/b-testing"]
 	},
